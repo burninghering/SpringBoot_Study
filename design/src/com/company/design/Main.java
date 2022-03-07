@@ -1,6 +1,7 @@
 package com.company.design;
 
 import com.company.design.adapter.*;
+import com.company.design.aop.AopBrowser;
 import com.company.design.proxy.Browser;
 import com.company.design.proxy.BrowserProxy;
 import com.company.design.proxy.IBrowser;
@@ -39,11 +40,11 @@ public class Main {
 //        browser.show();
 //        browser.show(); // 매번 네이버로부터 url을 받아오고 있음
 
-        IBrowser browser = new BrowserProxy("www.naver.com");
-        browser.show(); //처음에는 url을 네이버에서 받아오지만
-        browser.show(); //캐시 기능 사용해 불러오고 있다.
-        browser.show();
-        browser.show();
+//        IBrowser browser = new BrowserProxy("www.naver.com");
+//        browser.show(); //처음에는 url을 네이버에서 받아오지만
+//        browser.show(); //캐시 기능 사용해 불러오고 있다.
+//        browser.show();
+//        browser.show();
     }
 
     //adapter : 콘센트
