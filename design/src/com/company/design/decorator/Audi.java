@@ -2,9 +2,9 @@ package com.company.design.decorator;
 
 public class Audi implements ICar{
 
-    private int cost;
-    public Audi(int cost){
-    
+    private int price;
+    public Audi(int price){
+        this.price=price;
     }
 
     @Override
@@ -14,6 +14,6 @@ public class Audi implements ICar{
 
     @Override
     public void showPrice() {
-
+        System.out.println("Audi의 가격은 "+price+"원 입니다.");
     }
 }
