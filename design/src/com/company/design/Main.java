@@ -3,6 +3,10 @@ package com.company.design;
 import com.company.design.adapter.*;
 import com.company.design.aop.AopBrowser;
 import com.company.design.decorator.*;
+import com.company.design.facade.Ftp;
+import com.company.design.facade.Reader;
+import com.company.design.facade.SftpClient;
+import com.company.design.facade.Writer;
 import com.company.design.observer.Button;
 import com.company.design.observer.IButtonListener;
 import com.company.design.proxy.Browser;
@@ -67,20 +71,47 @@ public class Main {
 //        audi5.showPrice();
         //<-end Decorator
 
-        Button button = new Button("버튼");
+        //start Observer->
+//        Button button = new Button("버튼");
+//
+//        button.addListener(new IButtonListener() {
+//            @Override
+//            public void clickEvent(String event) {
+//                System.out.println(event);
+//            }
+//        });
+//
+//        button.click("메시지 전달 : click 1");
+//        button.click("메시지 전달 : click 2");
+//        button.click("메시지 전달 : click 3");
+//        button.click("메시지 전달 : click 4");
+        //<-end Observer
 
-        button.addListener(new IButtonListener() {
-            @Override
-            public void clickEvent(String event) {
-                System.out.println(event);
-            }
-        });
+        Ftp ftpClient = new Ftp("www.foo.co.kr",22,"/home/etc");
+        ftpClient.connect();
+        ftpClient.moveDirectory();
 
-        button.click("메시지 전달 : click 1");
-        button.click("메시지 전달 : click 2");
-        button.click("메시지 전달 : click 3");
-        button.click("메시지 전달 : click 4");
+        Writer writer = new Writer("text.tmp");
+        writer.fileConnect();
+        writer.write();
 
+        Reader reader = new Reader("text.tmp");
+        reader.fileConnect();
+        reader.fileRead();
+
+        reader.fileDisconnect();
+        writer.fileDisconnect();
+        ftpClient.disConnect();
+        //위 예시는 굉장히 추상화된 형태이지만, 각각의 객체에 너무 의존하고 있다.
+
+        //그러므로 아래와 같이 파사드 패턴을 적용시키면,
+        //앞 쪽 정면만 바라볼 수 있도록 객체 하나 만들 수 있고,
+        //여러가지 의존성을 가진 것을 새로운 인터페이스 형태로 제공한다.
+        SftpClient sftpClient = new SftpClient("www.foo.co.kr",22,"/home/etc","text.tmp");
+        sftpClient.connect();
+        sftpClient.write();
+        sftpClient.read();
+        sftpClient.disConnect();
     }
 
     //adapter : 콘센트
