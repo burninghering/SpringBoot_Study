@@ -2,6 +2,8 @@ package com.example.hello.controller;
 
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
+
 @RestController
 @RequestMapping("/api/get")
 public class GetApiController {
@@ -35,6 +37,21 @@ public class GetApiController {
     //검색을 할 때, 여러 가지 매개 변수 인자를 뜻함
 
     //http://localhost:8080/api/get/query-param?user=steve&email=steve@gmail.com&age=30
-    
+
+    @GetMapping("path=/query-param")
+    public String queryParam(Map<String,String> queryParam){
+
+        StringBuilder sb = new StringBuilder();
+        queryParam.entrySet().forEach(entry->{
+            System.out.println(entry.getKey());
+            System.out.println(entry.getValue());
+            System.out.println("\n");
+
+            sb.append(entry.getKey()+" = "+entry.getValue());
+        });
+
+        return sb.toString();
+    }
+
 
 }
