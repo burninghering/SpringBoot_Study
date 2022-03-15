@@ -41,8 +41,9 @@ public class GetApiController {
     @GetMapping("path=/query-param")
     public String queryParam(Map<String,String> queryParam){
 
-        StringBuilder sb = new StringBuilder();
-        queryParam.entrySet().forEach(entry->{
+        StringBuilder sb = new StringBuilder(); //String을 붙일 때 메모리 낭비를 막기위해 사용
+
+        queryParam.entrySet().forEach(entry->{ //entrySet -> MAP 전체 출력 시 Key,Value값 모두 가져올 때 사용
             System.out.println(entry.getKey());
             System.out.println(entry.getValue());
             System.out.println("\n");
@@ -50,7 +51,7 @@ public class GetApiController {
             sb.append(entry.getKey()+" = "+entry.getValue());
         });
 
-        return sb.toString();
+        return sb.toString(); //객체를 문자화하여 나타내기
     }
 
 
