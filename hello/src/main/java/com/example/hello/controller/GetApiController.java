@@ -39,7 +39,7 @@ public class GetApiController {
     //http://localhost:8080/api/get/query-param?user=steve&email=steve@gmail.com&age=30
 
     @GetMapping("path=/query-param")
-    public String queryParam(Map<String,String> queryParam){
+    public String queryParam(@RequestParam Map<String,String> queryParam){
 
         StringBuilder sb = new StringBuilder(); //String을 붙일 때 메모리 낭비를 막기위해 사용
 
