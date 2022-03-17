@@ -47,6 +47,7 @@ public class GetApiController {
             System.out.println(entry.getKey());
             System.out.println(entry.getValue());
             System.out.println("\n");
+            
 
             sb.append(entry.getKey()+" = "+entry.getValue());
         });
