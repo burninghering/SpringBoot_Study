@@ -1,5 +1,6 @@
 package com.example.hello.controller;
 
+import com.example.hello.DTO.UserRequest;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -38,8 +39,8 @@ public class GetApiController {
 
     //http://localhost:8080/api/get/query-param?user=steve&email=steve@gmail.com&age=30
 
-    @GetMapping("path=/query-param")
-    public String queryParam(@RequestParam Map<String,String> queryParam){
+    @GetMapping(path="query-param")
+    public String queryParam(@RequestParam Map<String,String> queryParam){ //Map으로 받는 경우에는 key값을 알 수 없음
 
         StringBuilder sb = new StringBuilder(); //String을 붙일 때 메모리 낭비를 막기위해 사용
 
@@ -47,13 +48,45 @@ public class GetApiController {
             System.out.println(entry.getKey());
             System.out.println(entry.getValue());
             System.out.println("\n");
-            
 
-            sb.append(entry.getKey()+" = "+entry.getValue());
+
+            sb.append(entry.getKey()+" = "+entry.getValue()+"\n");
         });
 
         return sb.toString(); //객체를 문자화하여 나타내기
     }
 
+    //Map으로 받을 때는 모든 키를 다 받을 수 있지만,
+    //코딩할 때 불편한 점 : queryParam.get("name") 이렇게 name을 얻는 방식으로 하나하나 다 지정해줘야 한다.
+    //그것이 아니라 명시적으로 변수로 받기 위해서는 @RequestParam을 각 변수 앞에 다 붙여주면 된다.
 
+    //QueryParameter에 넣을 수 있는 것은, user/email/age라고 딱 선언해주는 방법
+    @GetMapping("query-param02")
+    public String queryParam02(
+        @RequestParam String name,
+        @RequestParam String email,
+        @RequestParam int age
+        ){
+
+        System.out.println(name);
+        System.out.println(email);
+        System.out.println(age);
+
+        return name+" "+email+" "+age;
+    }
+
+
+    //userRequest 객체가 들어오면,
+    //queryparameter에 들어있는 주소들, 즉 물음표 뒤에 있는 것들을 스프링이 판단한다
+    //?user=steve&email=steve@gmail.com&age=30
+    //그리고 key에 해당하는 것들을 (user,email,age) 해당 객체에서 변수와 매칭을 해주게 된다.
+    @GetMapping("query-param03")
+    public String queryParam03(UserRequest userRequest){ //객체를 활용해서 받는 것이 아주 편하다!
+
+        System.out.println(userRequest.getName());
+        System.out.println(userRequest.getEmail());
+        System.out.println(userRequest.getAge());
+
+        return userRequest.toString();
+    }
 }
