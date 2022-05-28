@@ -23,10 +23,10 @@ public class ParameterAop {
 
     //메소드 실행되기 전 어떠한 값이 들어가는지 확인
     //언제 실행시킬 것이냐?
-    @Before("cut()") //cut 메소드가 실행되는 시점에 before를 실행시키겠다
+    //@Before("cut()") //cut 메소드가 실행되는 시점에 before를 실행시키겠다
     public void before(JoinPoint joinPoint){ //들어가는 지점에 대한 정보를 가지고 있는 joinpoint
 
-        //**새로 추가된 부분
+
         MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
         Method method = methodSignature.getMethod();
         System.out.println(method.getName());
@@ -40,7 +40,7 @@ public class ParameterAop {
 
     //들어간 후 어떠한 값이 리턴되는지
     //반환값이 뭘까?
-    @AfterReturning(value = "cut()", returning = "returnobj") //returning="" 안에 내가 받고싶은 오브젝트 객체 이름 넣어주기
+    //@AfterReturning(value = "cut()", returning = "returnobj") //returning="" 안에 내가 받고싶은 오브젝트 객체 이름 넣어주기
     public void afterReturn(JoinPoint joinPoint, Object returnobj){ //returning값과 매칭되어야함
         System.out.println("return obj");
         System.out.println(returnobj);
