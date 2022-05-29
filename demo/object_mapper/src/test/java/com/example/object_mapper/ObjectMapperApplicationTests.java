@@ -14,7 +14,7 @@ class ObjectMapperApplicationTests {
 
         var objectMapper = new ObjectMapper(); //직접 객체로 만들어서 활용해보자
 
-        // (1) object->TEXT
+        // (1) object->TEXT(Json)
         var user = new User("steve",10,"010-1111-2222"); //생성자 오버로딩으로 객체 초기화
         var text = objectMapper.writeValueAsString(user);
         System.out.println(text);
