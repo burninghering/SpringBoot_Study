@@ -18,7 +18,9 @@ public class ApiController {
     }
 
     @GetMapping("/hello")
-    public UserResponse getHello(){ //컨트롤러에서도 리턴 타입을 UserResponse로 바꿔주자
-        return restTemplateService.hello();
+    public UserResponse getHello(){
+
+        restTemplateService.post();
+        return new UserResponse();
     }
 }
