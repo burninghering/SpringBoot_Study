@@ -1,105 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="519c1ce5-9084-4e8e-abca-e2bb4132c9cf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+    <list default="true" id="c205a772-f34b-4357-bc75-5315a9616131" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aop/src/main/java/com/example/aop/aop/DecodeAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/aop/src/main/java/com/example/aop/aop/DecodeAop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aop/src/main/java/com/example/aop/aop/ParameterAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/aop/src/main/java/com/example/aop/aop/ParameterAop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aop/src/main/java/com/example/aop/aop/TimerAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/aop/src/main/java/com/example/aop/aop/TimerAop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aop/src/main/java/com/example/aop/controller/RestApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/aop/src/main/java/com/example/aop/controller/RestApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/controller/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/controller/ApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/dto/Req.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/dto/Req.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/service/RestTemplateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/service/RestTemplateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delete/src/main/java/com/example/delete/controller/DeleteApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/delete/src/main/java/com/example/delete/controller/DeleteApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/ioc/src/com/company/ioc/Base64Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/ioc/src/com/company/ioc/Base64Encoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/ioc/src/com/company/ioc/Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/ioc/src/com/company/ioc/Encoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/ioc/src/com/company/ioc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/ioc/src/com/company/ioc/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/ioc/src/com/company/ioc/UrlEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/ioc/src/com/company/ioc/UrlEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/object_mapper/src/main/java/com/example/object_mapper/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/object_mapper/src/main/java/com/example/object_mapper/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/object_mapper/src/test/java/com/example/object_mapper/ObjectMapperApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/object_mapper/src/test/java/com/example/object_mapper/ObjectMapperApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/adapter/Cleaner.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/adapter/Cleaner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/adapter/HairDryer.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/adapter/HairDryer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/adapter/SocketAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/adapter/SocketAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/aop/AopBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/aop/AopBrowser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/decorator/A3.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/decorator/A3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/decorator/A4.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/decorator/A4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/decorator/A5.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/decorator/A5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/decorator/Audi.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/decorator/Audi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/decorator/AudiDeorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/decorator/AudiDeorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/decorator/ICar.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/decorator/ICar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/facade/Ftp.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/facade/Ftp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/facade/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/facade/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/facade/SftpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/facade/SftpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/facade/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/facade/Writer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/observer/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/observer/Button.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/proxy/Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/proxy/Browser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/proxy/BrowserProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/proxy/BrowserProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/proxy/Html.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/proxy/Html.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/singleton/Aclazz.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/singleton/Aclazz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/singleton/Bclazz.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/singleton/Bclazz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/singleton/SocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/singleton/SocketClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/strategy/AppendStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/strategy/AppendStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/strategy/Base64Strategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/strategy/Base64Strategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/strategy/Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/strategy/Encoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/src/com/company/design/strategy/NomalStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/design/src/com/company/design/strategy/NomalStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exception/src/main/java/com/example/exception/advice/ApiControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/exception/src/main/java/com/example/exception/advice/ApiControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exception/src/main/java/com/example/exception/controller/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/exception/src/main/java/com/example/exception/controller/ApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exception/src/main/java/com/example/exception/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/exception/src/main/java/com/example/exception/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter/src/main/java/com/example/filter/controller/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter/src/main/java/com/example/filter/controller/ApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter/src/main/java/com/example/filter/controller/ApiUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter/src/main/java/com/example/filter/controller/ApiUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter/src/main/java/com/example/filter/filter/GlobalFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter/src/main/java/com/example/filter/filter/GlobalFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/src/main/java/com/example/hello/controller/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello/src/main/java/com/example/hello/controller/ApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/src/main/java/com/example/hello/controller/GetApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hello/src/main/java/com/example/hello/controller/GetApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intercepter/src/main/java/com/example/intercepter/annotation/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/intercepter/src/main/java/com/example/intercepter/annotation/Auth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intercepter/src/main/java/com/example/intercepter/controller/PrivateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/intercepter/src/main/java/com/example/intercepter/controller/PrivateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intercepter/src/main/java/com/example/intercepter/controller/PublicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/intercepter/src/main/java/com/example/intercepter/controller/PublicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intercepter/src/main/java/com/example/intercepter/exception/AuthException.java" beforeDir="false" afterPath="$PROJECT_DIR$/intercepter/src/main/java/com/example/intercepter/exception/AuthException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intercepter/src/main/java/com/example/intercepter/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/intercepter/src/main/java/com/example/intercepter/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intercepter/src/main/java/com/example/intercepter/intercepter/AuthInterception.java" beforeDir="false" afterPath="$PROJECT_DIR$/intercepter/src/main/java/com/example/intercepter/intercepter/AuthInterception.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ioc/src/main/java/com/example/ioc/ApplicationContextProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/ioc/src/main/java/com/example/ioc/ApplicationContextProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ioc/src/main/java/com/example/ioc/Base64Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/ioc/src/main/java/com/example/ioc/Base64Encoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ioc/src/main/java/com/example/ioc/Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/ioc/src/main/java/com/example/ioc/Encoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ioc/src/main/java/com/example/ioc/IocApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ioc/src/main/java/com/example/ioc/IocApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ioc/src/main/java/com/example/ioc/UrlEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/ioc/src/main/java/com/example/ioc/UrlEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obect_mapper_util/sample.json" beforeDir="false" afterPath="$PROJECT_DIR$/obect_mapper_util/sample.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obect_mapper_util/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/obect_mapper_util/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/src/main/java/com/example/post/controller/PostApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/post/src/main/java/com/example/post/controller/PostApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/put/src/main/java/com/example/put/PutApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/put/src/main/java/com/example/put/PutApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/put/src/main/java/com/example/put/dto/PostRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/put/src/main/java/com/example/put/dto/PostRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/response/src/main/java/com/example/response/controller/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/response/src/main/java/com/example/response/controller/ApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/response/src/main/java/com/example/response/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/response/src/main/java/com/example/response/controller/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/response/src/main/java/com/example/response/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/response/src/main/java/com/example/response/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/src/main/java/com/example/restaurant/db/MemoryDbRepositoryAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/main/java/com/example/restaurant/db/MemoryDbRepositoryAbstract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/src/main/java/com/example/restaurant/db/MemoryDbRepositoryIfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/main/java/com/example/restaurant/db/MemoryDbRepositoryIfs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/src/main/java/com/example/restaurant/naver/NaverClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/main/java/com/example/restaurant/naver/NaverClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/src/main/java/com/example/restaurant/naver/dto/SearchImageReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/main/java/com/example/restaurant/naver/dto/SearchImageReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/src/main/java/com/example/restaurant/naver/dto/SearchLocalReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/main/java/com/example/restaurant/naver/dto/SearchLocalReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/src/main/java/com/example/restaurant/wishlist/service/WishListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/main/java/com/example/restaurant/wishlist/service/WishListService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/src/test/java/com/example/restaurant/naver/NaverClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/test/java/com/example/restaurant/naver/NaverClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant/src/test/java/com/example/restaurant/wishlist/repository/WishListRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/src/test/java/com/example/restaurant/wishlist/repository/WishListRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/server/controller/ServerApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/example/server/controller/ServerApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/server/dto/Req.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/example/server/dto/Req.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/src/main/java/com/example/validation/annotation/YearMonth.java" beforeDir="false" afterPath="$PROJECT_DIR$/validation/src/main/java/com/example/validation/annotation/YearMonth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/src/main/java/com/example/validation/controller/ApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/validation/src/main/java/com/example/validation/controller/ApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/src/main/java/com/example/validation/dto/Req.java" beforeDir="false" afterPath="$PROJECT_DIR$/validation/src/main/java/com/example/validation/dto/Req.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/src/main/java/com/example/validation/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/validation/src/main/java/com/example/validation/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/src/main/java/com/example/validation/validator/YearMonthValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/validation/src/main/java/com/example/validation/validator/YearMonthValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="25I3Pd23sgWhFYiHpE13IMFvtkT" />
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="company" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectId" id="2ELlCmRb6TDGLID4clNoDklIekx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-  </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.design.Main" />
-      <module name="IdeaProjects" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="519c1ce5-9084-4e8e-abca-e2bb4132c9cf" name="Changes" comment="" />
-      <created>1645200752625</created>
+      <changelist id="c205a772-f34b-4357-bc75-5315a9616131" name="Changes" comment="" />
+      <created>1662382622730</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1645200752625</updated>
-      <workItem from="1645200754652" duration="69000" />
+      <updated>1662382622730</updated>
+      <workItem from="1662382624850" duration="35000" />
     </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
 </project>

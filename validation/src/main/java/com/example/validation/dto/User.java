@@ -8,7 +8,7 @@ public class User {
     @NotBlank
     private String name;
 
-    @Max(value=90)
+    @Max(value = 90)
     private int age;
 
     @Valid

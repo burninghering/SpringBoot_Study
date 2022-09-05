@@ -13,7 +13,7 @@ public class WishListService {
 
     public void search(String query) {
         //지역 검색
-        var searchLocalReq=new SearchLocalReq();
+        var searchLocalReq = new SearchLocalReq();
         se
 
         //이미지 검색

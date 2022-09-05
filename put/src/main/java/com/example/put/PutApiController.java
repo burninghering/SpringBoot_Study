@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 public class PutApiController {
 
     @PutMapping("/put/{userId}")
-    public PostRequestDto put(@RequestBody PostRequestDto requestDto, @PathVariable(name="userId") Long id){
+    public PostRequestDto put(@RequestBody PostRequestDto requestDto, @PathVariable(name = "userId") Long id) {
         System.out.println(id);
 
         return requestDto;

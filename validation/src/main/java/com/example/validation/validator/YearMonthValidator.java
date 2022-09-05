@@ -20,9 +20,9 @@ public class YearMonthValidator implements ConstraintValidator<YearMonth, String
     public boolean isValid(String value, ConstraintValidatorContext context) {
 
         // yyyyMM
-        try{
-            LocalDate localDate = LocalDate.parse(value+"01" , DateTimeFormatter.ofPattern(this.pattern));
-        }catch (Exception e){
+        try {
+            LocalDate localDate = LocalDate.parse(value + "01", DateTimeFormatter.ofPattern(this.pattern));
+        } catch (Exception e) {
             return false;
         }
 

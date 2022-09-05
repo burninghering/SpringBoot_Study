@@ -19,12 +19,12 @@ public class ApiController {
 
     @GetMapping("")
     public User get(
-            @Size(min=2)
+            @Size(min = 2)
             @RequestParam String name,
 
             @NotNull
             @Min(1)
-            @RequestParam Integer age){
+            @RequestParam Integer age) {
 
         User user = new User();
         user.setName(name);
@@ -34,7 +34,7 @@ public class ApiController {
     }
 
     @PostMapping("")
-    public User post(@Valid @RequestBody User user){
+    public User post(@Valid @RequestBody User user) {
         System.out.println(user);
         return user;
     }

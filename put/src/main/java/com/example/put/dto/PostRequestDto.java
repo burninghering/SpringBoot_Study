@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.annotation.JsonNaming;
 
 import java.util.List;
 
-@JsonNaming(value= PropertyNamingStrategy.SnakeCaseStrategy.class)
+@JsonNaming(value = PropertyNamingStrategy.SnakeCaseStrategy.class)
 public class PostRequestDto {
 
     private String name;

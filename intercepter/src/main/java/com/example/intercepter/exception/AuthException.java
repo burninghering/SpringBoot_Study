@@ -1,4 +1,4 @@
 package com.example.intercepter.exception;
 
-public class AuthException extends RuntimeException{
+public class AuthException extends RuntimeException {
 }

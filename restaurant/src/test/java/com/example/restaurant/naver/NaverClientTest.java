@@ -14,7 +14,7 @@ public class NaverClientTest {
     private NaverClient naverClient;
 
     @Test
-    public void localSearchTest(){
+    public void localSearchTest() {
         var search = new SearchLocalReq();
         search.setQuery("갈비집");
 
@@ -23,8 +23,8 @@ public class NaverClientTest {
     }
 
     @Test
-    public void searchImageTest(){
-        var search=new SearchImageReq();
+    public void searchImageTest() {
+        var search = new SearchImageReq();
         search.setQuery("갈비집");
 
         var result = naverClient.searchImage(search);

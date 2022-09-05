@@ -5,7 +5,7 @@ public class Req<T> { //바디의 내용이 자꾸 바뀔 것이므로 제네릭
     private Header header;
     private T rBody;
 
-    public static class Header{
+    public static class Header {
         private String responseCode;
 
         public String getResponseCode() { //Getter

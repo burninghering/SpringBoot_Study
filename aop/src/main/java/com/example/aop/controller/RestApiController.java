@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.*;
 public class RestApiController {
 
     @GetMapping("/get/{id}")
-    public String get(@PathVariable Long id, @RequestParam String name){
-        return id+" "+name;
+    public String get(@PathVariable Long id, @RequestParam String name) {
+        return id + " " + name;
     }
 
     @PostMapping("/post")
-    public User post(@RequestBody User user){ //dto 만든 후 클래스 객체 불러옴
+    public User post(@RequestBody User user) { //dto 만든 후 클래스 객체 불러옴
         return user;
     }
 
@@ -26,13 +26,13 @@ public class RestApiController {
     public void delete() throws InterruptedException {
 
         //DB Logic
-        Thread.sleep(1000*2); //1000이 1초니 2초정도 걸린다고 한다
+        Thread.sleep(1000 * 2); //1000이 1초니 2초정도 걸린다고 한다
 
     }
 
     @Decode
     @PutMapping("/put")
-    public User put(@RequestBody User user){
+    public User put(@RequestBody User user) {
         System.out.println("put");
         System.out.println(user);
         return user;

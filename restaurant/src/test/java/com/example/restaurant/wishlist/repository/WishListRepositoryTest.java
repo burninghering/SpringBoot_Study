@@ -12,7 +12,7 @@ public class WishListRepositoryTest {
     @Autowired
     private WishListRepository wishListRepository;
 
-    private WishListEntity create(){ //아래 함수들은 자주 쓰이는 것이므로 create에 따로 빼줌
+    private WishListEntity create() { //아래 함수들은 자주 쓰이는 것이므로 create에 따로 빼줌
         var wishList = new WishListEntity();
         wishList.setTitle("title");
         wishList.setCategory("category");
@@ -28,41 +28,40 @@ public class WishListRepositoryTest {
     }
 
     @Test
-    public void saveTest(){
+    public void saveTest() {
         var wishListEntity = create();
         var expected = wishListRepository.save(wishListEntity);
 
         Assertions.assertNotNull(expected);
-        Assertions.assertEquals(1,expected.getIndex()); //첫 번째 데이터 인덱스인 1, 그리고 기대하는 인덱스인 1을 가지고 오면 정상 동작
+        Assertions.assertEquals(1, expected.getIndex()); //첫 번째 데이터 인덱스인 1, 그리고 기대하는 인덱스인 1을 가지고 오면 정상 동작
     }
 
     @Test
-    public void updateTest(){
+    public void updateTest() {
         var wishListEntity = create();
         var expected = wishListRepository.save(wishListEntity);
 
         expected.setTitle("update test");
-        var saveEntity=wishListRepository.save(expected);
+        var saveEntity = wishListRepository.save(expected);
 
         Assertions.assertEquals("update test", saveEntity.getTitle());
-        Assertions.assertEquals(1,wishListRepository.listAll().size());
+        Assertions.assertEquals(1, wishListRepository.listAll().size());
     }
 
 
-
     @Test
-    public void findByIdTest(){
+    public void findByIdTest() {
         var wishListEntity = create();
         wishListRepository.save(wishListEntity); //save를 한 후
 
         var expected = wishListRepository.findById(1); //해당 데이터 1번이라는 값을 찾았을 때
 
-        Assertions.assertEquals(true,expected.isPresent()); //정상적으로 찾아지는지
-        Assertions.assertEquals(1,expected.get().getIndex()); //get으로 데이터를 꺼냈을 때 Index가 1이어야 한다는 뜻
+        Assertions.assertEquals(true, expected.isPresent()); //정상적으로 찾아지는지
+        Assertions.assertEquals(1, expected.get().getIndex()); //get으로 데이터를 꺼냈을 때 Index가 1이어야 한다는 뜻
     }
 
     @Test
-    public void deleteTest(){
+    public void deleteTest() {
         var wishListEntity = create();
         wishListRepository.save(wishListEntity);
 
@@ -70,11 +69,11 @@ public class WishListRepositoryTest {
 
         int count = wishListRepository.listAll().size();
 
-        Assertions.assertEquals(0,count);
+        Assertions.assertEquals(0, count);
     }
 
     @Test
-    public void listAllTest(){
+    public void listAllTest() {
         var wishListEntity1 = create();
         wishListRepository.save(wishListEntity1);
 
@@ -83,7 +82,7 @@ public class WishListRepositoryTest {
 
         int count = wishListRepository.listAll().size();
 
-        Assertions.assertEquals(2,count);
+        Assertions.assertEquals(2, count);
     }
 
 }

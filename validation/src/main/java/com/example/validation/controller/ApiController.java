@@ -28,8 +28,8 @@ public class ApiController {
                 System.out.println("field : " + field.getField());
                 System.out.println(message);
 
-                sb.append("field : "+field.getField());
-                sb.append("message : "+message);
+                sb.append("field : " + field.getField());
+                sb.append("message : " + message);
             });
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(sb.toString());
         }

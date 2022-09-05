@@ -13,10 +13,10 @@ public class ApplicationContextProvider implements ApplicationContextAware {
 
     @Override //(2)set 메소드를 만들때 ApplicationContext를 주입해줄 것이며 우리는 그것을 받아 static 변수에 할당할 것이다(위에)
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        context=applicationContext;
+        context = applicationContext;
     }
 
-    public static ApplicationContext getContext(){ //(3)그럼 우리는 가져다 쓰기만 하면 된다!
+    public static ApplicationContext getContext() { //(3)그럼 우리는 가져다 쓰기만 하면 된다!
         return context;
     }
 }

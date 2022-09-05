@@ -29,7 +29,7 @@ public class NaverClient {
     @Value("https://openapi.naver.com/v1/search/image")
     private String naverImageSearchUrl;
 
-    public SearchLocalRes searchLocal(SearchLocalReq searchLocalReq){
+    public SearchLocalRes searchLocal(SearchLocalReq searchLocalReq) {
         var uri = UriComponentsBuilder.fromUriString(naverLocalSearchUrl)
                 .queryParams(searchLocalReq.toMultiValueMap())
                 .build()
@@ -42,7 +42,8 @@ public class NaverClient {
         headers.setContentType(MediaType.APPLICATION_JSON);
 
         var httpEntity = new HttpEntity<>(headers);
-        var responseType = new ParameterizedTypeReference<SearchLocalRes>(){};
+        var responseType = new ParameterizedTypeReference<SearchLocalRes>() {
+        };
 
 
         var responseEntity = new RestTemplate().exchange(
@@ -56,7 +57,7 @@ public class NaverClient {
     }
 
 
-    public SearchImageRes searchImage(SearchImageReq searchImageReq){
+    public SearchImageRes searchImage(SearchImageReq searchImageReq) {
         var uri = UriComponentsBuilder.fromUriString(naverImageSearchUrl)
                 .queryParams(searchImageReq.toMultiValueMap())
                 .build()
@@ -69,7 +70,8 @@ public class NaverClient {
         headers.setContentType(MediaType.APPLICATION_JSON);
 
         var httpEntity = new HttpEntity<>(headers);
-        var responseType = new ParameterizedTypeReference<SearchImageRes>(){};
+        var responseType = new ParameterizedTypeReference<SearchImageRes>() {
+        };
 
 
         var responseEntity = new RestTemplate().exchange(

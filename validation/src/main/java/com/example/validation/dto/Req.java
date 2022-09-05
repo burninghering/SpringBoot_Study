@@ -6,7 +6,7 @@ import javax.validation.constraints.Size;
 
 public class Req {
 
-    @Size(min = 1 , max = 10)
+    @Size(min = 1, max = 10)
     @NotEmpty
     private String name;
 

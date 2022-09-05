@@ -9,20 +9,20 @@ import java.util.Map;
 @RequestMapping("/api/get")
 public class GetApiController {
 
-    @GetMapping(path="/hello") //http:localhost:8080/api/get/hello
-    public String hello(){
+    @GetMapping(path = "/hello") //http:localhost:8080/api/get/hello
+    public String hello() {
         return "get Hello";
     }
 
-    @RequestMapping(path="/hi", method= RequestMethod.GET) //get http://localhost:8080/api/get/hi
-    public String hi(){
+    @RequestMapping(path = "/hi", method = RequestMethod.GET) //get http://localhost:8080/api/get/hi
+    public String hi() {
         return "hi";
     }
 
     //http:localhost:8080/api/get/path-variable/{name} <-변화하는 값을 넣자
     @GetMapping("/path-variable/{id}")
-    public String pathVariable(@PathVariable(name="id") String pathName){ //@PathVariable(name=" ") 안에다가 선언하자
-        System.out.println("PathVariable : "+pathName);
+    public String pathVariable(@PathVariable(name = "id") String pathName) { //@PathVariable(name=" ") 안에다가 선언하자
+        System.out.println("PathVariable : " + pathName);
         return pathName;
     }
 
@@ -39,18 +39,18 @@ public class GetApiController {
 
     //http://localhost:8080/api/get/query-param?user=steve&email=steve@gmail.com&age=30
 
-    @GetMapping(path="query-param")
-    public String queryParam(@RequestParam Map<String,String> queryParam){ //Map으로 받는 경우에는 key값을 알 수 없음
+    @GetMapping(path = "query-param")
+    public String queryParam(@RequestParam Map<String, String> queryParam) { //Map으로 받는 경우에는 key값을 알 수 없음
 
         StringBuilder sb = new StringBuilder(); //String을 붙일 때 메모리 낭비를 막기위해 사용
 
-        queryParam.entrySet().forEach(entry->{ //entrySet -> MAP 전체 출력 시 Key,Value값 모두 가져올 때 사용
+        queryParam.entrySet().forEach(entry -> { //entrySet -> MAP 전체 출력 시 Key,Value값 모두 가져올 때 사용
             System.out.println(entry.getKey());
             System.out.println(entry.getValue());
             System.out.println("\n");
 
 
-            sb.append(entry.getKey()+" = "+entry.getValue()+"\n");
+            sb.append(entry.getKey() + " = " + entry.getValue() + "\n");
         });
 
         return sb.toString(); //객체를 문자화하여 나타내기
@@ -63,16 +63,16 @@ public class GetApiController {
     //QueryParameter에 넣을 수 있는 것은, user/email/age라고 딱 선언해주는 방법
     @GetMapping("query-param02")
     public String queryParam02(
-        @RequestParam String name,
-        @RequestParam String email,
-        @RequestParam int age
-        ){
+            @RequestParam String name,
+            @RequestParam String email,
+            @RequestParam int age
+    ) {
 
         System.out.println(name);
         System.out.println(email);
         System.out.println(age);
 
-        return name+" "+email+" "+age;
+        return name + " " + email + " " + age;
     }
 
 
@@ -81,7 +81,7 @@ public class GetApiController {
     //?user=steve&email=steve@gmail.com&age=30
     //그리고 key에 해당하는 것들을 (user,email,age) 해당 객체에서 변수와 매칭을 해주게 된다.
     @GetMapping("query-param03")
-    public String queryParam03(UserRequest userRequest){ //객체를 활용해서 받는 것이 아주 편하다!
+    public String queryParam03(UserRequest userRequest) { //객체를 활용해서 받는 것이 아주 편하다!
 
         System.out.println(userRequest.getName());
         System.out.println(userRequest.getEmail());

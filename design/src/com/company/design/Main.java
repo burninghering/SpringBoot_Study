@@ -123,7 +123,7 @@ public class Main {
         EncodingStrategy normal = new NomalStrategy(); //전략 생성
 
 
-        String message="Hello java";
+        String message = "Hello java";
 
         encoder.setEncodingStrategy(base64); //전략 사용할 때마다 세팅
         String base64Result = encoder.getMessage(message);
@@ -138,8 +138,9 @@ public class Main {
         System.out.println(appendResult);
         //전략을 주입함으로써 결과가 달라지도록 함함
     }
+
     //adapter : 콘센트
-    public static void connect(Electronic110V electronic110V){
+    public static void connect(Electronic110V electronic110V) {
         electronic110V.powerOn();
     }
 }

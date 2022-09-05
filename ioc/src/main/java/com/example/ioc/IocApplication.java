@@ -33,15 +33,15 @@ public class IocApplication {
 }
 
 @Configuration //한 개의 클래스에서 여러 개의 Bean을 등록할 것이라는 의미
-class AppConfig{
+class AppConfig {
 
     @Bean("base64Encoder") //아까는 74여서 부딪힐 일 없음
-    public Encoder encoder(Base64Encoder base64Encoder){
+    public Encoder encoder(Base64Encoder base64Encoder) {
         return new Encoder(base64Encoder);
     }
 
     @Bean("urlEncode") //UrlEncoder는 이미 쓰고 있기 때문에 Encode
-    public Encoder encoder(UrlEncoder urlEncoder){
+    public Encoder encoder(UrlEncoder urlEncoder) {
         return new Encoder(urlEncoder);
     }
 }
