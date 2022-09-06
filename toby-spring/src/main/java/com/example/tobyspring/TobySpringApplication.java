@@ -1,13 +1,13 @@
-package com.example.springoftobi;
+package com.example.tobyspring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringOfTobiApplication {
+public class TobySpringApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringOfTobiApplication.class, args);
+        SpringApplication.run(TobySpringApplication.class, args);
     }
 
 }
